@@ -1,0 +1,54 @@
+<ons-navigator>
+	<ons-page>
+		<ons-toolbar>
+			<div class="left">
+				<ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+			</div>
+<div class="center"><h3 style="margin-top:-4px"><strong>IndianEagles.Team</strong></h3></div>
+		</ons-toolbar>
+		<div style="text-align: center">
+		<h2 class="w3-khaki" id="TitleEvents">Add Event</h2> 
+		<div id="result" style="text-align:left">
+		<form class="w3-container">
+		<div class="w3-row-padding">
+		<div class="w3-half">
+			<label>Date:</label>
+			<input name="Date" id="Date" type="date" value="" placeholder="2016-12-31" class="w3-input" onfocus=$("#eventSave").html(null)>
+		</div>	
+		<div class="w3-half">
+			<label>Time:</label>
+			<input name="Time" id="Time" type="time" value="" placeholder="9:30 am" class="w3-input" onfocus=$("#eventSave").html(null)>
+		</div>
+			<label>Topic:</label>
+			<input name="Topic" id="Topic" type="text" value="" placeholder="Business Development" class="w3-input" onfocus=$("#eventSave").html(null)>
+			<label>Event Name:</label>
+			<input name="Event" id="Event" type="text" value="" placeholder="Ruchi's meeting" class="w3-input" onfocus=$("#eventSave").html(null)>
+			<label>Place:</label>
+			<input name="Place" id="Place" type="text" value="" placeholder="Satellite Road" class="w3-input" onfocus=$("#eventSave").html(null)>
+			<label>Address:</label>
+			<input name="Address" id="Address" type="text" value="" placeholder="Full address with land mark" class="w3-input" onfocus=$("#eventSave").html(null)>
+			<label>City:</label>
+			<input name="City" id="City" type="text" value="" placeholder="Ahmedabad" class="w3-input" onfocus=$("#eventSave").html(null)>
+			<label>State:</label>
+			<input name="State" id="State" type="text" value="" placeholder="Gujarat" class="w3-input" onfocus=$("#eventSave").html(null)>
+			<label>Host:</label>
+			<input name="Host" id="Host" type="text" value="" placeholder="Ruchi Doctor " class="w3-input" onfocus=$("#eventSave").html(null)>
+			<label>Mobile:</label>
+			<input name="Mobile" id="Mobile" type="text" value="" placeholder="+91 9879578244 " class="w3-input" onfocus=$("#eventSave").html(null)>
+			<label>Description:</label>
+			<textarea name="EventDescription" id="EventDescription" class="w3-input" onfocus=$("#eventSave").html(null)></textarea><br>
+			<button class="w3-btn w3-btn-block" onclick="iet.addEvent()">Save</button>
+			 <div class="w3-panel w3-pale-red w3-leftbar w3-border-red" id="eventSave">
+  
+				</div> 
+			</div>
+			</form><br><br><br><br>
+		</div>
+	</ons-page>
+
+	<div class="w3-bottom">
+  <ul class="w3-navbar">
+    <li><a href="#" onclick="app.slidingMenu.setMainPage('events.html', {closeMenu: true});iet.events();" class="w3-red"> << Events</a></li>
+  </ul>
+	</div>
+</ons-navigator>

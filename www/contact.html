@@ -1,0 +1,19 @@
+<ons-page>
+	<ons-toolbar class="w3-light-blue">
+		<div class="left">
+			<ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+		</div>
+		<div class="center"><h3 style="margin-top:-4px"><strong>IndianEagles.Team</strong></h3></div>
+	</ons-toolbar>
+	<div style="text-align:center" id="pageContact">
+		<h2 class="w3-green" id="contact">Search Contacts</h2>
+		<input class="w3-input" type="text" id="searchText">
+		<label>Phone or Email or Name</label>
+		<div class="w3-btn-group w3-show-inline-block">
+		<button class="w3-btn w3-red" onclick="iet.searchPhone();">Phone</button>
+		<button class="w3-btn w3-teal" onclick="iet.searchEmail();">Email</button>
+		<button class="w3-btn w3-pink" onclick="iet.searchName();">Name</button>
+		</div>
+		<div id="contactsList"></div>
+		</div>
+</ons-page>

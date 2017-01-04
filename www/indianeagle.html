@@ -1,0 +1,17 @@
+<ons-page>
+	<ons-toolbar>
+		<div class="left">
+			<ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+		</div>
+		<div class="center"><h3 style="margin-top:-4px"><strong>IndianEagles.Team</strong></h3></div>
+	</ons-toolbar>
+		<div style="text-align:center">
+			<h2 class="w3-orange">Keep Flying...</h2>
+			<a href="#" 	onclick="app.slidingMenu.setMainPage('page1.html', {closeMenu: true});iet.users();"><img src="images/150x150.png" class="w3-circle w3-padding" width="60%" ></a><br>
+			<a href="#" 	onclick="app.slidingMenu.setMainPage('modicare.html', {closeMenu: true});"><img src="images/ModiCare-Logo.png" class="w3-padding" width="60%" ></a><br>
+			<a href="#" 	class="w3-btn-block w3-teal"	onclick="app.slidingMenu.setMainPage('modicare.html', {closeMenu: true});"><i class="fa fa-caret-square-o-up"></i>&nbsp;Business Plan</a><br><br>
+			<a href="#" 	class="w3-btn-block w3-green"	onclick="app.slidingMenu.setMainPage('products.html', {closeMenu: true});iet.categories()">Products</a><br><br>
+			<a href="#" 	class="w3-btn-block w3-purple" onclick="app.slidingMenu.setMainPage('dp.html', {closeMenu: true});iet.states();">Distributor Points</a><br>
+			<h2></h2>
+		</div>
+</ons-page>

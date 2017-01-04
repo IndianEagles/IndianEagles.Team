@@ -1,0 +1,22 @@
+<ons-page>
+	<ons-toolbar class="w3-light-blue">
+		<div class="left">
+			<ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+		</div>
+		<div class="center"><h3 style="margin-top:-4px"><strong>IndianEagles.Team</strong></h3></div>
+	</ons-toolbar>
+	<div style="text-align:center" id="page2">
+	<a href="#" onclick="app.slidingMenu.setMainPage('active.html', {closeMenu: true});iet.active();" class="w3-btn w3-btn-block">Active Eagles</a>
+		<h2 class="w3-amber" id="meMCA"></h2>
+		<div id="result"></div>
+		<div id="script"></div>
+		<div id="footer"></div>
+		</div>
+</ons-page>
+<style>
+canvas {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+</style>

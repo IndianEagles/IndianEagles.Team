@@ -1,0 +1,98 @@
+<ons-page style="background-color: white">
+	<ons-list>
+			<ons-list-item
+			modifier="tappable" class="list__item__line-height w3-orange"
+			onclick="app.slidingMenu.setMainPage('indianeagle.html', {closeMenu: true});">
+			<img src="images/30x30.png" class="w3-circle" width="20"> &nbsp; IndianEagles
+		</ons-list-item>
+
+			<ons-list-item
+			modifier="tappable" class="list__item__line-height w3-light-green"
+			onclick="app.slidingMenu.setMainPage('modicare.html', {closeMenu: true});">
+			<img src="images/modicare.png" class="" width="20"> &nbsp; Modicare
+		</ons-list-item>
+
+		
+		<ons-list-item
+			modifier="tappable" class="list__item__line-height w3-lime"
+			onclick="app.slidingMenu.setMainPage('products.html', {closeMenu: true, callback:iet.categories()});">
+			<i class="fa fa-th fa-lg" style="color: #093"></i>
+			&nbsp; Products
+		</ons-list-item>
+		
+		<ons-list-item
+			modifier="tappable" class="list__item__line-height w3-light-blue"
+			onclick="app.slidingMenu.setMainPage('page1.html', {closeMenu: true});iet.users();">
+			<i class="fa fa-home fa-lg" style="color: #039"></i>
+			&nbsp; About
+		</ons-list-item>
+
+		<ons-list-item
+			modifier="tappable" class="list__item__line-height w3-khaki"
+			onclick="app.slidingMenu.setMainPage('events.html', {closeMenu: true});iet.events();iet.push();">
+			<i class="fa fa-calendar fa-lg" style="color: #963"></i>
+			&nbsp; Events
+		</ons-list-item>
+		
+		
+		<ons-list-item id="menuLogin"
+			modifier="tappable" class="list__item__line-height w3-amber"
+			onclick="app.slidingMenu.setMainPage('page2.html', {closeMenu: true});iet.initial()">
+			<i class="fa fa-user fa-lg" style="color: #f30"></i>
+			&nbsp; Login
+		</ons-list-item>
+		
+		<ons-list-item id="menuLogout" style="display:none"
+			modifier="tappable" class="list__item__line-height w3-amber"
+			onclick="app.slidingMenu.setMainPage('page2.html', {closeMenu: true});iet.logout();">
+			<i class="fa fa-user fa-lg" style="color: #f30"></i>
+			&nbsp; Logout 
+		</ons-list-item>
+
+		<ons-list-item  id="menuMCAUp"  style="display:none"
+			modifier="tappable" class="list__item__line-height w3-purple"
+			onclick="app.slidingMenu.setMainPage('upline.html', {closeMenu: true});iet.upline();">
+			<img src="images/30x30.png" class="w3-circle" width="20">
+			&nbsp; <span id="mcaLoginUp" class="w3-small"></span><span class="w3-small">'s Upline</span>
+		</ons-list-item>
+		
+		
+		<ons-list-item  id="menuMCA"  style="display:none"
+			modifier="tappable" class="list__item__line-height w3-pink"
+			onclick="app.slidingMenu.setMainPage('team.html', {closeMenu: true});iet.consultants();">
+			<i class="fa fa-user fa-lg" style="color: #000"></i>
+			&nbsp; <span id="mcaLogin" class="w3-small"></span><span class="w3-small">'s Team</span>
+		</ons-list-item>
+		
+		<ons-list-item
+			modifier="tappable" id="menuMessage" class="list__item__line-height "
+			onclick="app.slidingMenu.setMainPage('message.html', {closeMenu: true});iet.messages();">
+			<i class="fa fa-comment fa-lg" style="color: #000"></i>
+			&nbsp; Messages <span id="messageCount" class="w3-small w3-right w3-margin-right" style="font-weight:bold;color:red"></span>
+		</ons-list-item>
+		
+		<hr style="margin:0px 0px 10px">
+		
+		<ons-list-item
+			modifier="tappable" class="list__item__line-height w3-gray"
+			onclick="app.slidingMenu.setMainPage('dp.html', {closeMenu: true});iet.states();">
+			<i class="fa fa-server fa-lg" style="color: #000"></i>
+			&nbsp; Distribution Points
+		</ons-list-item>
+		
+		<ons-list-item
+			modifier="tappable" class="list__item__line-height w3-green"
+			onclick="app.slidingMenu.setMainPage('contact.html', {closeMenu: true});iet.contacts();">
+			<i class="fa fa-users fa-lg" style="color: #fff"></i>
+			&nbsp; Phone Contacts
+		</ons-list-item>
+		
+		<ons-list-item
+			modifier="tappable" class="list__item__line-height w3-yellow"
+			onclick="app.slidingMenu.setMainPage('offers.html', {closeMenu: true});iet.offers();"> 
+			<i class="fa fa-gift fa-lg" style="color: brown"></i>
+			&nbsp; Offers
+		</ons-list-item>
+
+		</ons-list>
+</ons-page>

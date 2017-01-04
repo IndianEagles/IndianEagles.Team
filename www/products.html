@@ -1,0 +1,32 @@
+<ons-navigator>
+	<ons-page>
+		<ons-toolbar>
+			<div class="left">
+				<ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+			</div>
+		<div class="center"><h3 style="margin-top:-4px"><strong>IndianEagles.Team</strong></h3></div>
+		</ons-toolbar>
+		<div style="text-align: center">
+		<h2 class="w3-lime" id="TitleProducts">Categories</h2> 
+		<div class="w3-btn-group">
+		<button class="w3-btn w3-pink" onclick="iet.listName()" style="width:33%">Names</button>
+		<button class="w3-btn  w3-green" onclick="iet.categories()"  style="width:34%">Products</button>		
+		<button class="w3-btn  w3-orange" onclick="iet.listCode()"  style="width:33%">Codes</button>
+		</div>
+		
+		<div class="w3-btn-group">
+		<button class="w3-btn " onclick="iet.favorites()" style="width:50%"> My Favourites </button>
+		<button id="Cart" class="w3-btn  w3-teal" onclick="iet.showcart()"  style="width:50%">Cart: 0 items</button>
+		</div>
+		<div id="favorite"></div>
+		<div id="result">
+		<p>Click either on <br><br>
+			
+			<button class="w3-btn-block w3-pink" onclick="iet.listName()">Names</button><br><br>
+			<button class="w3-btn w3-btn-block w3-green" onclick="iet.categories()">Products</button>		<br><br>
+			<button class="w3-btn w3-btn-block w3-orange" onclick="iet.listCode()">Codes</button><br><br>
+			</p>
+		</div>
+	</ons-page>
+	<br>
+</ons-navigator>

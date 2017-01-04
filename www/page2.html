@@ -1,0 +1,42 @@
+<ons-page>
+	<ons-toolbar>
+		<div class="left">
+			<ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+		</div>
+<div class="center"><h3 style="margin-top:-4px"><strong>IndianEagles.Team</strong></h3></div>
+	</ons-toolbar>
+	<div style="text-align:center" id="page2">
+	<h2 class="w3-amber">Login</h2>
+	<form class="w3-container">
+		
+		<div class="w3-container w3-pink text-align: left">
+			<label>MCA Number</label>
+		</div>
+		<input class="w3-input w3-animate-input" type="text" placeholder="92143123" name="mcaNumber" id="mcaNumber" onkeyup="$('#mcaNumberError').html('');">
+		<label class="w3-label w3-validate" id="mcaNumberError"></label>
+		<br>
+		<div class="w3-container w3-pink">
+			<label>Mobile Number</label>
+		</div>
+		<input class="w3-input w3-animate-input" type="text" placeholder="9998887777" name="Mobile" id="Mobile" onkeyup="$('#MobileError').html('');">
+		<label class="w3-label w3-validate" id="MobileError"></label>
+		<br>
+		<button value="Validate" onclick="iet.login()" class="w3-btn w3-round-large w3-amber"><b>Validate - Voice</b></button> 		<button value="Validate" onclick="iet.sms()" class="w3-btn w3-round-large w3-amber"><b>Validate - SMS</b></button><br></br>
+		<label class="w3-label w3-validate" id="LoginError"></label>
+	</form>
+	<div style="text-align: center">								
+	<img src="images/150x150.png" class="w3-circle w3-padding" width="70%" >
+	</div>
+	</div>
+</ons-page>
+<script type="text/javascript">
+$(function() {
+		$( "#DateJoin" ).datepicker({
+      changeMonth: true,
+      changeYear: true,
+						dateFormat: 'yy-mm-dd',
+						inline: false,
+						yearRange: "-100:+0",
+ });
+});
+</script>

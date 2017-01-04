@@ -1,0 +1,24 @@
+<ons-page>
+	<ons-toolbar class="w3-light-blue">
+		<div class="left">
+			<ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+		</div>
+		<div class="center"><h3 style="margin-top:-4px"><strong>IndianEagles.Team</strong></h3></div>
+	</ons-toolbar>
+	<div style="text-align:center" id="pageContact" style="margin:10px">
+		<h2 class="w3-green" id="contact">Messages</h2>
+		<label class="w3-left">&nbsp;<b>Text message:</b></label>
+		<textarea class="w3-input" type="text" id="message" onfocus="$('messageSuccess').html('');$('messageSuccess').hide();"></textarea>
+		<label class="w3-left">&nbsp;<b>To:</b></label>
+		<select id="mcaNumber" name="mcaNumber" class="w3-select w3-border">
+		</select>
+		<div class="w3-btn-group w3-show-inline-block">
+		<button class="w3-btn w3-red" onclick="iet.messageAll();" id="allButton">> All </button>
+		<button class="w3-btn w3-teal" onclick="iet.messageDownline();" id="downlineButton">> Downline </button>
+		<button class="w3-btn w3-pink" onclick="iet.message();" id="nameButton">> Name</button>
+		<button class="w3-btn w3-white" onclick="iet.messages();" id="refresh"><i class="fa fa-refresh fa-lg"></i></button>
+		</div>
+		<div id="messageSuccess"></div>
+		<div id="messageList"></div>
+		</div>
+</ons-page>

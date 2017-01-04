@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "IndianEagles.Team",
+    "description": "IndianEagles.Team builds network for Modicare",
+    "version": "0.1.0",
+    "app": {
+        "background": {
+            "scripts": [
+                "background.js"
+            ]
+        }
+    },
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "fullscreen",
+        "http://indianeagles.team"
+    ],
+    "short_name": "EaglesTeam",
+    "offline_enabled": false,
+    "optional_permissions": [],
+    "externally_connectable": {
+        "ids": [],
+        "matches": [
+            "http://indianeagles.team"
+        ],
+        "accepts_tls_channel_id": false
+    }
+}

@@ -1,0 +1,18 @@
+<ons-page>
+	<ons-toolbar  class="w3-light-blue">
+		<div class="left">
+			<ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+		</div>
+		<div class="center"><h3 style="margin-top:-4px"><strong>IndianEagles.Team</strong></h3></div>
+	</ons-toolbar>
+		<div style="text-align:center">
+			<h2 class="w3-green">Active Eagles</h2>
+		</div>
+		<div id="spinner"></div>
+		<div id="result"></div>
+	<div class="w3-bottom">
+  <ul class="w3-navbar">
+    <li><a href="#" onclick="app.slidingMenu.setMainPage('team.html', {closeMenu: true});iet.consultants();" class="w3-red"> << My Team</a></li>
+  </ul>
+	</div>
+</ons-page>

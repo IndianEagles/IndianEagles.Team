@@ -1,0 +1,41 @@
+/**/
+a{text-decoration:none}
+.oswald{
+	font-family: 'Oswald', 'Arial', 'Mangal', serif;
+}
+.size16{
+	font-size:16px
+}
+.size18{
+	font-size:18px
+}
+.size20{
+	font-size:20px
+}
+.size22{
+	font-size:22px
+}
+.size24{
+	font-size:24px
+}
+.size28{
+	font-size:28px
+}
+.size32{
+	font-size:32px
+}
+.size36{
+	font-size:36px
+}
+.size40{
+	font-size:40px
+}
+.size400{
+	font-weight:400
+}
+.size600{
+	font-weight:600
+}
+.size700{
+	font-weight:700
+}
