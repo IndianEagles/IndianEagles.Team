@@ -85,7 +85,7 @@
     <icon src="/platforms/chrome/icon.png" width="128" height="128"/>
   </platform>
 		<plugin name="org.apache.cordova.contacts" version="0.2.13" />
-		<plugin name="com.dbaq.cordova.contactsPhoneNumbers" version="0.0.8" />
+
   <preference name="monaca:MonacaBackendUrl" value="https://cloud.monaca.mobi/json-rpc/"/>
   <preference name="monaca:MonacaBackendId" value="580cc7927e2193a80deb9fd4"/>
   <preference name="monaca:MonacaBackendApiKey" value="496ae78f69ced83ce88ec90268a9d92fc9e7b1d95b47841fc3329bc28fffc75f"/>
